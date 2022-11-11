@@ -2,8 +2,6 @@ package com.example.do_the_task;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * Example local unit test, which will execute on the development machine (host).
  *
@@ -12,8 +10,15 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        System.out.println("福原勇樹");
-        System.out.println("岡本英也");
-        //assertEquals(4, 2 + 2);
-    }
+        Button nextButton = (Button)findViewById(R.id.NEXTbutton);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SubActivity.class);
+                startActivity(intent);
+            }
+        });
+          }
+
 }
+
+
