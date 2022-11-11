@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button nyuButton = (Button)findViewById(R.id.button);
-        nyuButton.setOnClickListener(new View.OnClickListener() {
+        Button okButton = (Button)findViewById(R.id.button);
+        okButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 @SuppressLint("WrongViewCast") EditText editText = (EditText)findViewById(R.id.editText);
                 String inputStr = editText.getText().toString();
-                TextView textView1 = (TextView)findViewById(R.id.text);
+                TextView textView1 = (TextView)findViewById(R.id.textView);
                 textView1.setText(inputStr);
             }
         });
