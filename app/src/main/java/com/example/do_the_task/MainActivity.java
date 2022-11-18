@@ -99,4 +99,3 @@ public class MainActivity extends AppCompatActivity {
         mTextViewCountDown.setText(timerLeftFormatted);
     }
 }
-
