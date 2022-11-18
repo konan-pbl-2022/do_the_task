@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".NyuryokuActivity"></activity>
+        <activity android:name=".MikanryouActivity" />
+        <activity android:name=".KanryouActivity" />
+        <activity android:name=".HyouziActivity" />
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".tourokuActivity">
             <intent-filter>
