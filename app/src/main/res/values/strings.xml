@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">do_the_task</string>
+    <string name="Start">スタート</string>
+    <string name="リセット">リセット</string>
+    <string name="_00_00">00:00</string>
 </resources>
