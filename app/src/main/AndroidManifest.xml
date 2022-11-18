@@ -13,7 +13,8 @@
         <activity android:name=".MikanryouActivity" />
         <activity android:name=".KanryouActivity" />
         <activity android:name=".HyouziActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".tourokuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
