@@ -61,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         updateCountDownText();
+
+        Button nextButton = (Button)findViewById(R.id.kanryoButton);
+        nextButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, KanryoActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void startTimer(){
