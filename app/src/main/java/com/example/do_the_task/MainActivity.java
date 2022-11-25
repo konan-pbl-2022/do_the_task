@@ -116,5 +116,11 @@ public class MainActivity extends AppCompatActivity {
         int seconds = (int)(mTimeLeftInMillis/1000)%60;
         String timerLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
         mTextViewCountDown.setText(timerLeftFormatted);
+
+        if(minutes == 0 && seconds == 0){
+            Intent intent = new Intent(MainActivity.this,MikanryouActivity.class);
+            startActivity(intent);
+        }
     }
+
 }
