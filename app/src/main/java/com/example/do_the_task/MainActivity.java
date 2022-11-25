@@ -1,6 +1,7 @@
 package com.example.do_the_task;
 
 //import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -53,6 +54,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         updateCountDownText();
+
+        Button nextButton = (Button)findViewById(R.id.kanryoButton);
+        nextButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, KanryoActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void startTimer(){
