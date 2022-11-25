@@ -17,7 +17,7 @@ public class MikanryouActivity extends AppCompatActivity {
         Button nextButton = (Button)findViewById(R.id.button4);
         nextButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MikanryouActivity.this, HyouziActivity.class);
+                Intent intent = new Intent(MikanryouActivity.this, tourokuActivity.class);
                 startActivity(intent);
             }
         });
